@@ -13,12 +13,21 @@
 # () the explanation doesn't need to be in the output. 
 
 
+#The isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False.
 left_hand = set("qazwsxedcrfvtgb")
 right_hand = set("yhnujmıkolp")
-word = set(input("please enter a word: "))  #The isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False.
+word = set(input("Please enter a word: "))  
 
 comfortable_word = not left_hand.isdisjoint(word) and not right_hand.isdisjoint(word)
 print(comfortable_word)
 
+
+#The intersection() method returns a set that contains the similarity between two or more sets.
+
+right = set('yuiophjklnm')
+left = set('qwertasdfgzxcvb')
+test = set(input("Please enter a word: "))
+comfortable_word = right.intersection(test) != "" and left.intersection(test) != ""
+print(comfortable_word)
 
 
