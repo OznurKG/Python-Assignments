@@ -19,3 +19,14 @@ password = "W@12"
 name = input("Please enter your name: ")
 print(my_name==name and "Hello, Joseph! The password is: W@12" or (f"Hello, {name}! See you later."))
 
+#Second Solution:
+ 
+my_name = "Joseph"
+password = "W@12"
+name = input("Please enter your name: ")
+if name == my_name :
+    print(f"Hello, {my_name}! The password is: {password}")
+else :
+    print(f"Hello, {name}! See you later.")
+
+
