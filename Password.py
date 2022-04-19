@@ -14,15 +14,15 @@ print out such as : "Hello, Amina! See you later."
 
 #First solution:
 
-my_name = "Joseph"
-password = "W@12"
+my_name = "Daniel"
+password = "D1251@"
 name = input("Please enter your name: ")
-print(my_name==name and "Hello, Joseph! The password is: W@12" or (f"Hello, {name}! See you later."))
+print(my_name==name and "Hello, Daniel! The password is: D1251@" or (f"Hello, {name}! See you later."))
 
 #Second Solution:
  
-my_name = "Joseph"
-password = "W@12"
+my_name = "Daniel"
+password = "D1251@"
 name = input("Please enter your name: ")
 if name == my_name :
     print(f"Hello, {my_name}! The password is: {password}")
