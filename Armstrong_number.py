@@ -46,3 +46,22 @@ else:
       print(num,"is an Armstrong number")
     else:
       print(num,"is not an Armstrong number")
+
+#Third solution:
+
+while True:
+    number = input("Enter a positive number: ")
+    digits = len(number)
+    sum = 0
+    if not number.isdigit():
+        print(number, "is invalid. Please enter a valid input")
+    elif int(number) >= 0:
+        for i in range(digits):
+            sum = sum + int(number[i]) ** digits
+        if sum == int(number):
+            print(f"{number} is an Armstrong number")
+            break
+        else:
+            print(f"{number} is not an Armstrong number")
+            break
+
