@@ -29,3 +29,20 @@ else:
         print(f"Yes, {num} is an Armstrong number")
     else:
         print(f"{num} is not an Armstrong number")
+
+#Second solution:
+
+num = input("Enter a number: ")
+sum = 0
+temp = int(num)
+if num.isdigit() == False :
+    print("It is not a valid entry.")
+else:
+    while temp > 0:
+      digit = temp % 10
+      sum += digit ** len(num)
+      temp //= 10
+    if int(num) == sum:
+      print(num,"is an Armstrong number")
+    else:
+      print(num,"is not an Armstrong number")
